@@ -4,25 +4,28 @@
 - git submoduleのアップデート
 - npmパッケージのインストール
 
+### Clone
+
+```
+git clone git@github.com:cgtf/user-guidance.git
+```
+
 ### Hugo
 
 Hugo（静的サイトジェネレーター）を利用しています。開発にはHugoが必要です。インストールは[こちら](https://gohugo.io/getting-started/installing)をご確認ください。
 
-### git submodule
-
-Hugoのテーマに[Docsy](https://www.docsy.dev/)を利用しています。gitのサブモジュールになっているので下記コマンドでsubmoduleをcloneします。
-
-```
-git submodule update --init --recursive
-```
-
-### npm package
-
-Docsyがnpmパッケージの `autoprefixer`, `postcss-cli` に依存しています。
+### npm
 
 ```
 npm install
 ```
+
+npm scriptsによって以下が実行されます。
+
+- `git submodule update --init --recursive`
+    - Hugoのテーマに[Docsy](https://www.docsy.dev/)を利用しています。gitのサブモジュールになっています。
+- `(cd themes/docsy && npm install)`
+    - docsyの依存解決
 
 ## 動作確認
 
