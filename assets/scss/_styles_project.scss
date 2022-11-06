@@ -1,0 +1,57 @@
+.section-troubles {
+    .alert {
+        .alert-heading {
+            font-size: 1rem;
+        }
+        font-size: 0.8rem;
+    }
+    
+    .section-index .entry .lead,
+    .td-content .lead {
+            font-size: 1rem;
+            font-weight: 600;
+            background-color: rgba($primary, 0.03);
+            border: 1px solid $border-color;
+            padding: 10px;
+            margin-top: 1.5rem;
+            margin-bottom: 1.5rem;
+    }
+}
+
+/* btn-light */
+.btn-light {
+    color: $secondary;
+    background: #FFF;
+    border-color: $secondary;
+  }
+  
+  .btn-light:hover {
+    color: lighten($secondary, 20%);
+    background: #FFF;
+    border-color: $secondary;
+  }
+  
+  .btn-light:focus, .btn-light.focus {
+    color: darken($secondary, 20%);
+    background: #FFF;
+    border-color: $secondary;
+    box-shadow: 0 0 0 0.2rem rgba(217, 216, 219, 0.5);
+  }
+  
+  .btn-light.disabled, .btn-light:disabled {
+    color: $secondary;
+    background: #EEE;
+    border-color: $secondary;
+  }
+  
+  .btn-light:not(:disabled):not(.disabled):active, .btn-light:not(:disabled):not(.disabled).active,
+  .show > .btn-light.dropdown-toggle {
+    color: $secondary;
+    background: #FFF;
+    border-color: $secondary;
+  }
+  
+  .btn-light:not(:disabled):not(.disabled):active:focus, .btn-light:not(:disabled):not(.disabled).active:focus,
+  .show > .btn-light.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.2rem rgba(218, 216, 219, 0.5);
+  }

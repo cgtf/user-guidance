@@ -1,0 +1,13 @@
+$cgtf-dark-blue: #2A2D3C !default;
+$cgtf-purple: #423CE8 !default;
+$colors: () !default;
+$colors: map-merge(
+  (
+    "cgtf-dark-blue": $cgtf-dark-blue,
+    "cgtf-purple": $cgtf-purple
+  ),
+  $colors
+);
+
+$primary: $cgtf-dark-blue !default;
+$secondary: $cgtf-purple !default;
