@@ -2,7 +2,7 @@
 relativeURLs = true
 languageCode = "ja-JP"
 title = "暗号資産とNFTのトラブル集"
-publishDir = "public"
+publishDir = "docs"
 theme = "docsy"
 contentDir = "content/ja"
 defaultContentLanguage = "ja"
